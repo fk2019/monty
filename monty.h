@@ -1,5 +1,6 @@
 #ifndef _MONTY_H_
 #define _MONTY_H_
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -63,4 +64,7 @@ void sub(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
 void mul(stack_t **stack, unsigned int line_number);
 void mod(stack_t **stack, unsigned int line_number);
+void _pchar(stack_t **head, unsigned int counter);
+void _rotl(stack_t **head,  __attribute__((unused)) unsigned int counter);
+
 #endif
